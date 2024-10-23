@@ -10,9 +10,6 @@ Before using the component, make sure to install `styled-components` by running:
 npm install styled-components
 
 
-
-1. Split Pattern :
-   
     used to show 
        [    left   |  right    ]
     
@@ -67,3 +64,10 @@ export const SplitScreen = ({ children , lw = 1,rw = 1}) => {
         </Container>
      )
 }
+
+
+
+=========================================
+
+
+#List Item Component
