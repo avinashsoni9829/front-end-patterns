@@ -64,10 +64,6 @@ export const SplitScreen = ({ children , lw = 1,rw = 1}) => {
         </Container>
      )
 }
+```
 
-
-
-=========================================
-
-
-#List Item Component
+# List View Pattern
