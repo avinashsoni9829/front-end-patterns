@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SplitScreen } from './patterns/splitPattern/split-screen';
 
+const LeftSide = () => {
+   return (
+    <>
+    <h2 style={{backgroundColor:"red"}}>Hello left</h2>
+    </>
+   )
+}
+
+
+const RightSide = () => {
+  return (
+   <>
+   <h2 style={{backgroundColor:"green"}}>Hello Right</h2>
+   </>
+  )
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <SplitScreen Left={LeftSide} Right={RightSide}/>
     </div>
   );
 }
