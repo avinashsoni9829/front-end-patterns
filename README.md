@@ -1,4 +1,14 @@
-install -> npm install styled-components
+# SplitScreen Component
+
+This `SplitScreen` component is a reusable layout utility that allows you to create a two-panel split-screen layout with customizable widths. It's built using `styled-components` for easy styling and flexibility.
+
+## Installation
+
+Before using the component, make sure to install `styled-components` by running:
+
+```bash
+npm install styled-components
+
 
 
 1. Split Pattern :
@@ -22,4 +32,38 @@ test - 1
 
  -- instead of passing left and right side we can pass them as children 
 
- 
+
+ ![Alt text](image-4.png)
+
+ ![Alt text](image-5.png)
+
+ # split screen final code 
+
+```bash
+import styled from "styled-components"
+
+const Container = styled.div`
+  display : flex;
+`;
+
+const Panel = styled.div`
+   flex : ${(p) => p.flex};
+`
+
+
+export const SplitScreen = ({ children , lw = 1,rw = 1}) => {
+    const [left,right] = children;
+     return (
+        <Container>
+         
+            <Panel flex = {lw}>
+                 {left}
+            </Panel>
+
+            <Panel flex = {rw}>
+                {right}
+            </Panel>
+
+        </Container>
+     )
+}``
