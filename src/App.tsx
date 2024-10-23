@@ -22,7 +22,10 @@ const RightSide = () => {
 function App() {
   return (
     <div className="App">
-     <SplitScreen Left={LeftSide} Right={RightSide}/>
+     <SplitScreen lw={1} rw={10}>
+      <LeftSide/>
+      <RightSide/>
+      </SplitScreen>
     </div>
   );
 }
