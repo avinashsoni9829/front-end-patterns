@@ -66,4 +66,4 @@ export const SplitScreen = ({ children , lw = 1,rw = 1}) => {
 
         </Container>
      )
-}``
+}
