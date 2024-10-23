@@ -6,7 +6,7 @@ This `SplitScreen` component is a reusable layout utility that allows you to cre
 
 Before using the component, make sure to install `styled-components` by running:
 
-```bash
+
 npm install styled-components
 
 
